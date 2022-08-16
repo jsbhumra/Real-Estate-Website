@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zub3tbp.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Real Estate Website</title>
+</head>
+<body>
+
+    <div class="hero">
+        
+    <nav>
+
+        <div class="navbarLogo">
+            <img class="logo" src="logo.png" alt="" onclick="window.location='index.html'">
+        </div>
+
+        <ul class="navbarList">
+
+            <li id="topOffers__link">Top Offers</li>
+            <li onclick="window.location='offers.html'">Search in Offers</li>
+            <li onclick="window.location='#aboutUs'">About Us</li>
+            <li onclick="window.location='#references'">References</li>
+
+        </ul>
+
+        <div class="navLogin" onclick="window.location='login.html'"> Login </div>
+
+    </nav>
+
+        <div class="heroImage">
+         <img data-aos="zoom-in" id="heroHouse" src="heroHouse.png" alt="">
+        </div>
+
+        <div class="heroTitle" data-aos="fade-down" data-aos-duration="1000">
+            MODERN LIVING <br> FOR EVERYONE
+        </div>
+
+        <div class="heroCaption" data-aos="fade-down" data-aos-duration="1000">
+            We provide a complete service for the sale and rental of real estate. 
+        </div>
+
+        <div class="heroAnimation">
+            <div class="line1">BUY SELL BUY SELL BUY SELL BUY</div>
+            <div class="line2">SELL BUY SELL BUY SELL BUY SELL</div>
+            <div class="line3">BUY SELL BUY SELL BUY SELL BUY</div>
+        </div>
+
+        <div class="searchBar">
+            <div class="dropdown" onclick="myFunction()">
+                    <i class="fa fa-caret-down"></i>
+                    Dropdown
+
+
+                  <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Student</a>
+                    <a href="#">Other</a>
+                  </div>
+                
+            </div>
+            <div class="offersSearch">
+                <input type="text" class="search"></input>
+                <div class="searchButton">Search</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="topOffers" id="topOffers">
+
+        <div class="offerTitle">
+
+            <div data-aos="fade-up" class="offerHeader">
+                Top Offers
+            </div>
+
+            <div class="offerCaption">
+                Fulfill your career dreams, enjoy all the achievements of <br>
+                the city center and luxury housing to the fullest.
+            </div>
+
+        </div>
+
+        <div class="offerRule"> <hr> </div>
+
+        <div class="offerCards">
+            <div class="hell">
+                <section class="panel">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </section>
+                <section class="panel">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </section>
+                <section class="panel">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </section >
+            </div>
+        </div>
+
+        <div class="offerAll">
+            Show All <br> Offers
+        </div>
+
+    </div>
+
+    <div class="aboutUs" id="aboutUs">
+        <div class="aboutImage">
+            <img  data-aos="zoom-in" height="60%" src="aboutUs.png"  alt="">
+        </div>
+        <div class="aboutUsText">
+            <div data-aos="zoom-in" class="aboutUsTitle">
+                About Us
+            </div>
+            <div data-aos="fade-up" class="aboutUsCaption">
+                We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate. Our advantage is more than 15 years of experience and soil in attractive locations in Slovakia with branches in Bratislava and Košice.
+            </div>
+            <div data-aos="fade-up" data-aos-anchor=".aboutUsCaption" class="aboutUsCaption">
+                We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate. 
+            </div>
+        </div>
+    </div>
+
+    <div class="Team">
+        <div data-aos="flip-left" data-aos-duration="1000" class="TeamTitle">
+            Our Team
+        </div>
+
+        <div class="TeamCards">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div data-aos="flip-left" data-aos-duration="1000" class="swiper-slide">Slide 1</div>
+                  <div data-aos="flip-left" data-aos-duration="1000" class="swiper-slide">Slide 2</div>
+                  <div data-aos="flip-left" data-aos-duration="1000" class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+
+        
+       
+    </div>
+
+    <div class="references" id="references">
+        <div data-aos="fade-up" class="referencesTitle">
+            References
+        </div>
+
+        <div data-aos="fade-up" class="referencesCaption">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus rutrum donec ultricies cras id ac.
+        </div>
+
+        <div class="referencesCards">
+            <div data-aos="flip-up" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script> <script src="bundle.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+ 
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropdown')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
+    <script>
+        $("#topOffers__link").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#topOffers").offset().top
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
