@@ -79,7 +79,7 @@ gsap.to(sections, {
 
 
 import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithPopup} from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCmvDj3wHb12urN2_s99BVP1A7smoQP3Ys",
@@ -102,3 +102,25 @@ onAuthStateChanged(auth, user => {
         console.log('No user');
     }
 });
+
+
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log("user created")
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+
+
+  signUp()
+  {
+    email = document.getElementById("email")
+    password = document.getElementById("password")
+    createUserWithEmailAndPassword(auth, email, password)
+  }
