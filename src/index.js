@@ -118,7 +118,7 @@ createUserWithEmailAndPassword(auth, email, password)
   });
 
 
-  signUp()
+  function signUp()
   {
     email = document.getElementById("email")
     password = document.getElementById("password")
