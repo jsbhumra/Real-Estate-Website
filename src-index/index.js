@@ -78,8 +78,14 @@ gsap.to(sections, {
 
 
 
+
+
 import { initializeApp } from 'firebase/app';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+// import { getAuth, onAuthStateChanged, connectAuthEmulator, signInWithEmailAndPassword } from 'firebase/auth';
+
+// const txtEmail = document.querySelector('#login__email')
+// const txtPassword = document.querySelector('#login__password')
+// const loginSubmit = document.querySelector('#login__submit')
 
 const firebaseConfig = {
     apiKey: "AIzaSyCmvDj3wHb12urN2_s99BVP1A7smoQP3Ys",
@@ -91,14 +97,26 @@ const firebaseConfig = {
     measurementId: "G-Z75WY60EPS"
   };
   
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-// Detect Auth state
-onAuthStateChanged(auth, user => {
-    if (user != null) {
-        console.log('logged in!');
-    } else {
-        console.log('No user');
-    }
-});
+// Initialize Firebase
+const firebaseApp = initializeApp(firebaseConfig);
+// const auth = getAuth(firebaseApp);
+// connectAuthEmulator(auth, 'http://localhost:9099');
+
+// // Detect Auth state
+// onAuthStateChanged(auth, user => {
+//     if (user != null) {
+//         console.log('logged in!');
+//     } else {
+//         console.log('No user');
+//     }
+// });
+
+// const loginEmailPassword = async () => {
+//     const loginEmail = txtEmail.value;
+//     const loginPassword = txtPassword.value;
+
+//     const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+//     console.log(userCredential.user);
+// }
+
+// loginSubmit.addEventListener("click", loginEmailPassword);
