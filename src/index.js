@@ -1,4 +1,7 @@
 
+button = document.getElementsByClassName("form__submit")
+button.addEventListener("click",signUp)
+
  function signUp()
  {
    email = document.getElementById("email")
