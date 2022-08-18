@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="offers.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="offersHero">
+
+    <nav>
+
+        <div class="navbarLogo">
+            <img class="logo" src="logo.png" alt="" onclick="window.location='index.html'">
+        </div>
+
+        <ul class="navbarList">
+
+            <li onclick="window.location='index.html'">Home</li>
+            <li onclick="window.location='index.html#topOffers'">Top Offers</li>
+
+        </ul>
+
+        <div class="navLogin" onclick="window.location='login.html'"> Login </div>
+
+    </nav>
+
+    <div class="offerHeroTitle">
+        Search For an Offer
+    </div>
+
+    <div class="offerHeroCaption">
+        Choose from the most advantageous offers
+    </div>
+
+
+</div>
+
+<div class="offersFilter">
+
+
+    <div class="offerSearch">
+        <input class="offersText" type="text" class="search"></input>
+        <div class="offersSearchButton">Search</div>
+    </div>
+
+    <div class="filterText">
+        <h2><span>Filter</span> </h2>
+    </div>
+
+    <div class="offersFilterSection">
+
+        <div class="people-dropdown" onclick="myFunction()">
+            <i class="fa fa-caret-down"></i>
+            Number Of People
+
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">1 person</a>
+            <a href="#">2 people</a>
+            <a href="#">3 people</a>
+            <a href="#">4 people</a>
+          </div>
+        </div>
+
+        <div class="people-dropdown" onclick="myFunction1()">
+            <i class="fa fa-caret-down"></i>
+            Location
+
+          <div class="dropdown-content" id="myDropdown1">
+            <a href="#">Ghatkopar</a>
+            <a href="#">Malad</a>
+            <a href="#">Kandivali</a>
+          </div>
+        </div>
+
+        <div class="people-dropdown" onclick="myFunction2()">
+            <i class="fa fa-caret-down"></i>
+            Sort By 
+
+          <div class="dropdown-content" id="myDropdown2">
+            <a href="#">Price(Low to High)</a>
+            <a href="#">Price(High to Low)</a>
+            <a href="#">Only Girls</a>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="offerSlider">
+        <div class="slider">
+            <input type="range" min="0" max="200" value="100" oninput="rangeValue.innerText = this.value * 1000">
+            <p id="rangeValue">10000</p>
+        </div>
+      
+    </div>
+
+
+</div>
+
+<div class="offersCards">
+
+</div>
+
+<div class="footer">
+        
+
+</div>
+
+<script>
+    function myFunction()
+    {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function myFunction1()
+    {
+        document.getElementById("myDropdown1").classList.toggle("show");
+    }
+
+    function myFunction2()
+    {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+  
+     window.onclick = function(e)
+    {
+        if (!e.target.matches('.people-dropdown')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      myDropdown = document.getElementById("myDropdown1");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+      myDropdown = document.getElementById("myDropdown2");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+
+    }
+    }
+
+</script>
+
+
+</body>
+</html>

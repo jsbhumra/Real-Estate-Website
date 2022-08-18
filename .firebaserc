@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "real-estate-b6984"
-  }
+  },
+  "targets": {
+    "real-estate-b6984": {
+      "hosting": {
+        "index": [
+          "real-estate-b6984"
+        ],
+        "login": [
+          "real-estate-b6984-login"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
