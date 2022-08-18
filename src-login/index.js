@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, connectAuthEmulator, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const txtEmail = document.querySelector('#txtemail')
 const txtPassword = document.querySelector('#txtpassword')
@@ -18,7 +18,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
-connectAuthEmulator(auth, 'http://localhost:9099');
 
 // Detect Auth state
 // onAuthStateChanged(auth, user => {
