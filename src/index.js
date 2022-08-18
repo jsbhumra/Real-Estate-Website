@@ -1,4 +1,11 @@
 
+ function signUp()
+ {
+   email = document.getElementById("email")
+   password = document.getElementById("password")
+   createUserWithEmailAndPassword(auth, email, password)
+ }
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -92,7 +99,7 @@ const firebaseConfig = {
   };
   
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 // Detect Auth state
 onAuthStateChanged(auth, user => {
@@ -118,9 +125,4 @@ createUserWithEmailAndPassword(auth, email, password)
   });
 
 
-  function signUp()
-  {
-    email = document.getElementById("email")
-    password = document.getElementById("password")
-    createUserWithEmailAndPassword(auth, email, password)
-  }
+ 
