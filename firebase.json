@@ -2,15 +2,7 @@
   "hosting": [
     {
       "target": "index",
-      "public": "dist/index"
-    },
-    {
-      "target": "login",
-      "public": "dist/login"
-    },
-    {
-      "target":"signup",
-      "public" : "dist/signup"
+      "public": "dist"
     }
   ],
   "emulators": {

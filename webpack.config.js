@@ -5,13 +5,13 @@ module.exports = {
     devtool: 'eval-source-map',
     entry: {
         index: {
-            import: './src-index/index.js', filename: './index/bundle.js'
+            import: './src/index.js', filename: '../dist/bundles/index.js'
         },
         login: {
-            import: './src-login/index.js', filename: './login/bundle.js'
+            import: './src/login.js', filename: '../dist/bundles/login.js'
         },
         signup: {
-            import: './src-signup/index.js', filename: './signup/bundle.js'
+            import: './src/signup.js', filename: '../dist/bundles/signup.js'
         }
     },
     watch: true

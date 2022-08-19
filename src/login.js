@@ -1,5 +1,6 @@
+
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const txtEmail = document.querySelector('#txtemail')
 const txtPassword = document.querySelector('#txtpassword')
@@ -29,3 +30,4 @@ const loginEmailPassword = async () => {
 }
 
 loginSubmit.addEventListener("click", loginEmailPassword);
+
