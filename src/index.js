@@ -1,4 +1,5 @@
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -78,8 +79,6 @@ gsap.to(sections, {
 
 
 
-
-
 import { initializeApp } from 'firebase/app';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
@@ -93,10 +92,9 @@ const firebaseConfig = {
     measurementId: "G-Z75WY60EPS"
   };
   
-// Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
-const auth = getAuth(firebaseApp);
-
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+const auth = getAuth();
 // Detect Auth state
 onAuthStateChanged(auth, user => {
     if (user != null) {
@@ -105,15 +103,3 @@ onAuthStateChanged(auth, user => {
         console.log('No user');
     }
 });
-
-console.log(auth)
-
-// const loginEmailPassword = async () => {
-//     const loginEmail = txtEmail.value;
-//     const loginPassword = txtPassword.value;
-
-//     const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-//     console.log(userCredential.user);
-// }
-
-// loginSubmit.addEventListener("click", loginEmailPassword);

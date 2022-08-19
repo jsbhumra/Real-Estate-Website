@@ -7,6 +7,10 @@
     {
       "target": "login",
       "public": "dist/login"
+    },
+    {
+      "target":"signup",
+      "public" : "dist/signup"
     }
   ],
   "emulators": {

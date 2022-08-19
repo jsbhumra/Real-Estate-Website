@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.loginLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 40vw;
+    height: 100vh;
+}
+
+.form {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto;
+}
+
+.loginRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFC947;
+    width: 60vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.loginwave {
+    position: relative;
+    width: 62vw;
+    margin-top: -4rem;
+}
+
+.loginvector {
+    box-sizing: content-box;
+    position: absolute;
+    width: 45vw;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-45%);
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    padding-bottom: 2vh;
+}
+
+.signupvector {
+    box-sizing: content-box;
+    position: absolute;
+    width: 45vw;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-45%);
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    padding-bottom: 0vh;
+}
+
+.loginRight__text {
+    box-sizing: content-box;
+    position: absolute;
+    margin: auto;
+    bottom: 10vh;
+    color: #113A8A;
+    width: 40vw;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+}
+
+.form__redirect {
+    padding-bottom: 5vh;
+    font-family: 'Poppins';
+}
+
+.form__redirect__link {
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #113A8A;
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+.form__header {
+    padding-bottom: 1vh;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 5vh;
+}
+
+.form__tagline {
+    padding-bottom: 6vh;
+    font-family: 'Poppins';
+    font-size: 2vh;
+}
+
+.form__group {
+    padding-bottom: 5vh;
+}
+
+.form__input {
+    width: 100%;
+    height: 1vh;
+    background: none;
+    outline: none;
+    border: solid 1.5px #FFC947;
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+}
+
+.form__label {
+    cursor: text;
+    position: absolute;
+    left: 1.5rem;
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    color: #113A8A;
+    font-weight: bold;
+    margin-top: 0.45rem;
+    margin-left: 7.5vw;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    background-color: white;
+    transition: margin-top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+    margin-top: -0.65rem;
+    left: 1.1rem;
+    font-size: 1rem;
+}
+
+.form__submit {
+    margin-top: 1vh;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    font-family: 'Poppins';
+    background-color: #113A8A;
+    border-radius: 0.25rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight:100;
+    padding-top: 0.3rem;
+    cursor: pointer;
+}
+
+.form__line {
+    margin-top: 1rem;
+    background-color: rgb(154, 151, 151);
+    height: 0.5px;
+    border: none;
+}
+
+.form__option {
+    width: max-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+    margin-top: -0.78rem;
+    text-align: center;
+    font-family: 'Poppins';
+    background-color: white;
+    color: rgb(154, 151, 151);
+}
+
+.form__google {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    border: solid 3px rgb(200, 200, 200);
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.google_img {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.form__google__text {
+    display: inline;
+    font-family: 'Poppins';
+    color: rgb(105, 103, 103);
+    font-weight: bold;
+}
+

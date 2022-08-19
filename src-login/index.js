@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 
 const txtEmail = document.querySelector('#txtemail')
 const txtPassword = document.querySelector('#txtpassword')
@@ -19,14 +19,6 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 
-// Detect Auth state
-// onAuthStateChanged(auth, user => {
-//     if (user != null) {
-//         console.log('logged in!');
-//     } else {
-//         console.log('No user');
-//     }
-// });
 
 const loginEmailPassword = async () => {
     const loginEmail = txtEmail.value;

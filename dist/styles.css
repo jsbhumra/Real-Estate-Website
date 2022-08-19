@@ -1,0 +1,509 @@
+body
+{
+    margin:0;
+    padding:0;
+    /* overflow: hidden; */
+    /* background-color: #ffc947; */
+}
+/* ---------------------------------landing page-------------------------------- */
+/* navbar */
+nav
+{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 10vh;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5vh;
+    top: 4vh;
+    background-color: #F0F0F0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.navbarLogo
+{
+    position: relative;
+    left:5vh;
+    top:2vh;
+}
+
+.logo
+{
+    height: 6vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+.navbarList
+{
+    position: absolute;
+    left:12vh;
+    display:flex;
+    gap: 35px;
+    font-size: 3vh;
+    color: #113A8A;
+}
+
+.navbarList li {
+    cursor: pointer;
+}
+
+.navLogin
+{
+    position: absolute;
+    right: 3vh;
+    top:2vh;
+    padding: 1.5vh;
+    width: 15%;
+    border-radius: 3vh;
+    text-align: center;
+    background-color: #113A8A;
+    color:#FFC947;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+
+
+/* Hero */
+
+.hero
+{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFC947;
+    overflow: hidden;
+}
+
+.heroImage
+{
+    position: absolute;
+    z-index : 1;
+    bottom: -15px;
+    right: 0px;
+}
+
+.heroTitle
+{
+    position: absolute;
+    top: 18vh;
+    left: 5%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 12vh;
+    letter-spacing: 3px;
+    color: #113A8A;
+}
+
+.heroCaption
+{
+    position: absolute;
+    top: 46vh;
+    left: 5%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    color: #3D598E;
+}
+
+.heroAnimation
+{
+    position: relative;
+    top:50vh;
+    left:-50vh;
+    z-index: 0;
+}
+
+.line1, .line2, .line3
+{
+    font-family: 'Lato', sans-serif;
+    overflow: none;
+    font-size: 15vh;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    color: #185ADB;
+    white-space: nowrap;
+}
+
+.searchBar
+{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    top: 78vh;
+    left: 26%;
+    height: 10vh;
+    width:81vh;
+    border-radius: 6vh;
+    background-color: #113A8A;
+}
+
+.dropdown
+{
+    position: absolute;
+    height: 4.8vh;
+    top:2vh;
+    left: 2vh;
+    width:22vh;
+    border-radius: 11vh;
+    background-color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 3vh;
+    color:#113A8A;
+    padding-top:1.2vh;
+}
+
+
+.search
+{
+    position: absolute;
+    height: 5.8vh;
+    padding-left:4vh;
+    top:2vh;
+    left: 26vh;
+    width:26vh;
+    border-radius: 11vh;
+    background-color: white;
+}
+
+.searchButton
+{
+    position: absolute;
+    height: 4.8vh;
+    top:2vh;
+    left: 58vh;
+    width:21vh;
+    border-radius: 11vh;
+    background-color: #FFC947;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 3vh;
+    color:#113A8A;
+    padding-top:1.2vh;
+
+}
+
+#heroHouse
+{
+    width: 65vh;
+}
+/* Top Offers */
+
+.topOffers
+{
+    height:100vh;
+    width: 100%;
+    background-color: #113A8A;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.offerTitle
+{
+    position: relative;
+    top: 10vh;
+    left: 5%;
+}
+
+.offerHeader
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12vh;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+    color: #ffc947;
+}
+
+.offerCaption
+{
+    margin-top: 2vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 4vh;
+    color: white;
+}
+
+.offerRule
+{
+    position: relative;
+    top:13vh;
+    left: 5%;
+    width: 60%;
+}
+
+hr
+{
+    border: 1px solid rgba(255, 201, 71, 0.7);
+    border-radius: 1px;
+}
+
+.offerCards
+{
+    position: relative;
+    top: 18vh;
+    width: 100%;
+    height: 45vh;
+}
+
+.offerAll
+{
+    position: relative;
+    top: -45vh;
+    left: 75%;
+    height: 8vh;
+    width: 25vh;
+    border-radius: 5vh;
+    background-color: #FFC947;
+    font-family: 'Lato', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    color: #0A1931;
+}
+
+.hell
+{
+    display: flex;
+    width: 300%;
+}
+section
+{
+    position: relative;
+    left: 0.5%;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    gap: 3%;
+    background-color: #113A8A;
+}
+.card
+{
+    position: relative;
+    height: 50vh;
+    width: 30%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+/* About Us */
+
+.aboutUs
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFC947;
+    display: flex;
+    overflow: hidden;
+}
+
+.aboutImage
+{
+    position: relative;
+    top:20vh;
+}
+
+.aboutUsText
+{
+    position: relative;
+    top:15vh;
+    left: 20vh;
+}
+
+.aboutUsTitle
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12vh;
+    font-weight: 700;
+    color: #113A8A;
+}
+
+.aboutUsCaption
+{
+    width:65%;
+    margin-top: 5vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 3vh;
+    color: #30549B;
+}
+
+/* Team */
+
+.Team
+{
+    width:100%;
+    height:100vh;
+    background-color: #113A8A;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.TeamTitle
+{
+    position: relative;
+    text-align: center;
+    top:7vh;
+    width:100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12vh;
+    color: #FFC947;
+
+}
+
+.TeamCards
+{
+    position: relative;
+    top:16vh;
+    height:55vh;
+    width:100%;
+}
+
+/* References */
+
+.references
+{
+    width:100%;
+    height:100vh;
+    background-color: #FFC947;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.referencesTitle
+{
+    position: relative;
+    text-align: center;
+    top:7vh;
+    width:100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12vh;
+    color: #113A8A;
+
+}
+.referencesCaption
+{
+    position: relative;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color:#4764C3;
+    font-size: 3vh;
+    top: 10vh;
+}
+
+.referencesCards
+{
+    position: relative;
+    top:22vh;
+    height:50vh;
+    width:100%;
+}
+/* footer */
+
+.footer
+{
+    height: 30vh;
+    width: 100%;
+    background-color: #113A8A;
+}
+
+
+/* swiper cards */
+
+.swiper
+{
+    width: 90%;
+    height: 100%;
+}
+
+.swiper-slide 
+{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 5%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Miscellenous */
+
+ul
+{
+    list-style-type: none;
+}
+
+input
+{
+    box-shadow: none;
+    border:none;
+}
+
+input[type="text"]
+{
+    font-size:3vh;
+    font-family: 'Lato', sans-serif;
+}
+
+  
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 20vh;
+    border-radius: 2vh;
+    left: 1vh;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a 
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+    border-radius: 2vh;
+}  
+.show 
+{
+    display: block;
+}
+
