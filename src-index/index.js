@@ -81,11 +81,7 @@ gsap.to(sections, {
 
 
 import { initializeApp } from 'firebase/app';
-// import { getAuth, onAuthStateChanged, connectAuthEmulator, signInWithEmailAndPassword } from 'firebase/auth';
-
-// const txtEmail = document.querySelector('#login__email')
-// const txtPassword = document.querySelector('#login__password')
-// const loginSubmit = document.querySelector('#login__submit')
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCmvDj3wHb12urN2_s99BVP1A7smoQP3Ys",
@@ -99,17 +95,18 @@ const firebaseConfig = {
   
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
-// const auth = getAuth(firebaseApp);
-// connectAuthEmulator(auth, 'http://localhost:9099');
+const auth = getAuth(firebaseApp);
 
-// // Detect Auth state
-// onAuthStateChanged(auth, user => {
-//     if (user != null) {
-//         console.log('logged in!');
-//     } else {
-//         console.log('No user');
-//     }
-// });
+// Detect Auth state
+onAuthStateChanged(auth, user => {
+    if (user != null) {
+        console.log('logged in!');
+    } else {
+        console.log('No user');
+    }
+});
+
+console.log(auth)
 
 // const loginEmailPassword = async () => {
 //     const loginEmail = txtEmail.value;
