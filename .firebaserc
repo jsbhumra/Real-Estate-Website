@@ -7,12 +7,6 @@
       "hosting": {
         "index": [
           "real-estate-b6984"
-        ],
-        "login": [
-          "real-estate-b6984-login"
-        ],
-        "signup": [
-          "real-estate-b6984-signup"
         ]
       }
     }
