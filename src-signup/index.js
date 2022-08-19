@@ -26,4 +26,5 @@ const signUpEmailPassword = async () => {
 }
 
 signUpSubmit.addEventListener("click", signUpEmailPassword);
+console.log("Hello");
 
