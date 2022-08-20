@@ -1,0 +1,97 @@
+body
+{
+    margin:0;
+    padding:0;
+}
+
+nav
+{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    height: 10vh;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5vh;
+    top: 4vh;
+    background-color: #F0F0F0;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbarLogo
+{
+    position: relative;
+    left:5vh;
+    top:2vh;
+}
+
+.logo
+{
+    height: 6vh;
+    width: 6vh;
+    cursor: pointer;
+}
+
+.navbarList
+{
+    position: absolute;
+    left:12vh;
+    display:flex;
+    gap: 35px;
+    font-size: 3vh;
+    color: #113A8A;
+}
+
+.navbarList li {
+    cursor: pointer;
+}
+
+.navLogin
+{
+    position: absolute;
+    right: 3vh;
+    top:2vh;
+    padding: 1.5vh;
+    width: 15%;
+    border-radius: 3vh;
+    text-align: center;
+    background-color: #113A8A;
+    color:#FFC947;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.page
+{
+    height: 150vh;
+    width: 100%;
+}
+
+.userInfo
+{
+    height: 50vh;
+    width: 100vw;
+    background-color: #113A8A;
+    text-align: center;
+}
+
+#GreetUser
+{
+    position: relative;
+    top: 25vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4vw;
+    color: white;
+}
+
+.userDetails
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFC947;
+}

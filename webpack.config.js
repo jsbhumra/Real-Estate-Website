@@ -12,6 +12,9 @@ module.exports = {
         },
         signup: {
             import: './src/signup.js', filename: '../dist/bundles/signup.js'
+        },
+        account: {
+            import: './src/account.js', filename: '../dist/bundles/account.js'
         }
     },
     watch: true

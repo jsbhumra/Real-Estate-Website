@@ -75,13 +75,8 @@ gsap.to(sections, {
     }
 });
 
-
-
-
-
-
 import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
+import { getAuth , onAuthStateChanged } from 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCmvDj3wHb12urN2_s99BVP1A7smoQP3Ys",
@@ -96,3 +91,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
+
+onAuthStateChanged(auth, function(user) {
+
+    console.log(user)
+
+    if(user) console.log("Okay");
+    
+    if (user) {
+        document.getElementById("Login").textContent = "Account";
+        document.getElementById("Login").setAttribute('onclick',"window.location='account.html'");
+
+    } else {
+        document.getElementsById("Login").textContent = "Login";
+        document.getElementById("Login").setAttribute('onclick',"window.location='login.html'");
+
+    }
+  });

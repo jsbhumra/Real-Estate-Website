@@ -24,10 +24,8 @@ const auth = getAuth(firebaseApp);
 const loginEmailPassword = async () => {
     const loginEmail = txtEmail.value;
     const loginPassword = txtPassword.value;
-
     const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
     console.log(userCredential.user);
 }
-
 loginSubmit.addEventListener("click", loginEmailPassword);
 
