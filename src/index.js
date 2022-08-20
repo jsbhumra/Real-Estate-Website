@@ -103,8 +103,7 @@ onAuthStateChanged(auth, function(user) {
         document.getElementById("Login").setAttribute('onclick',"window.location='account.html'");
 
     } else {
-        document.getElementsById("Login").textContent = "Login";
+        document.getElementById("Login").textContent = "Login";
         document.getElementById("Login").setAttribute('onclick',"window.location='login.html'");
-
     }
   });
